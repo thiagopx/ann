@@ -1,0 +1,13 @@
+gdown==5.1.0
+imgaug==0.4.0
+deepface==0.0.79
+torch==2.3.0
+torchvision==0.18.0
+opencv-python==4.9.0.80
+pandas==2.2.1
+scikit-image==0.22.0
+scikit-learn==1.4.0
+# tensorflow[and-cuda]
+Pillow==10.2.0
+matplotlib==3.8.3
+pyyaml==6.0.1

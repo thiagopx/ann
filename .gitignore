@@ -1,0 +1,25 @@
+# Ignore .venv directory
+.venv/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python byte code
+__pycache__/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore any compiled Python files (e.g., *.pyc, *.pyo)
+*.pyc
+*.pyo
+
+# Ignore .npy files
+*.npy
+
+# Ignore .joblib files
+*.joblib
+
+# Ignore .pt files
+*.pt
