@@ -6,3 +6,5 @@
 - Email: [thiago.paixao@ifes.edu.br](mailto:thiago.paixao@ifes.edu.br)
   
 Welcome to the repository for the Artificial Neural Networks (ANN) course! This repository serves as a resource hub for the ANN course offered by the Federal Institute of Espírito Santo (IFES, PPComp).
+
+Here is the link to the plan of the course: [Artificial Neural Networks](https://docs.google.com/spreadsheets/d/1Ao_atHMogFNuHYEmRCTu6_ZHLpxAZ3pdVerk5USYzok/edit?usp=sharing)
