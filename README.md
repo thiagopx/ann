@@ -12,6 +12,7 @@ Here is the link to the plan of the course: [Artificial Neural Networks](https:/
 Reference book: [Charu C. Aggarwal.](https://www.charuaggarwal.net/neural.htm)
 
 Useful resources:
+* [Original slides from the book](https://www.charuaggarwal.net/AllSlides.pdf)
 * [Linear Algebra Review and Reference](http://cs229.stanford.edu/section/cs229-linalg.pdf)
 * [Derivatives](http://cs231n.github.io/optimization-2/)
 * [More on derivatives and vectorization](https://cs231n.stanford.edu/handouts/derivatives.pdf)
