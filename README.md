@@ -16,5 +16,5 @@ Useful resources:
 * [Linear Algebra Review and Reference](http://cs229.stanford.edu/section/cs229-linalg.pdf)
 * [Derivatives](http://cs231n.github.io/optimization-2/)
 * [More on derivatives and vectorization](https://cs231n.stanford.edu/handouts/derivatives.pdf)
+* [Matrix Calculus on Wikipedia](https://en.wikipedia.org/wiki/Matrix_calculus) 
 * [Probability Theory Review for Machine Learning](http://cs229.stanford.edu/section/cs229-prob.pdf)
-
