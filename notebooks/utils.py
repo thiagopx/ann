@@ -3,6 +3,15 @@ from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
 
 
+def onehot(y, num_classes):
+    """
+    Convert integer labels to one-hot encoding.
+    """
+    y_onehot = np.zeros((len(y), num_classes))
+    y_onehot[np.arange(len(y)), y] = 1
+    return y_onehot
+
+
 def make_linear_regression_dataset(n_samples=100, x_min=-10, x_max=10, w=None, noise=0.1, random_state=None):
     x = np.random.uniform(x_min, x_max, n_samples)
     w = np.random.rand() if w is None else w
@@ -37,12 +46,15 @@ def plot_loss_history(loss_history, iterations=None, interval=1):
     plt.ylabel("Loss")
 
 
-def plot_classification_dataset_2D(X, y, negative_label=-1, ax=None, colors=None, alpha=1):
+def plot_classification_dataset_2D(X, y, negative_label=-1, ax=None, colors=None, alpha=1, labels=None):
     if colors is None:
         colors = ["orange", "blue"]
 
     if ax is None:
         ax = plt.gca()
+
+    if labels is None:
+        labels = ["negative class", "positive class"]
 
     plt.scatter(
         X[y == negative_label][:, 0], X[y == negative_label][:, 1], color=colors[0], edgecolors="gray", alpha=alpha
@@ -50,7 +62,7 @@ def plot_classification_dataset_2D(X, y, negative_label=-1, ax=None, colors=None
     ax.scatter(X[y == 1][:, 0], X[y == 1][:, 1], color=colors[1], edgecolors="gray", alpha=alpha)
     ax.set_xlabel("$x_1$")
     ax.set_ylabel("$x_2$")
-    ax.legend(["negative class", "positive class"])
+    ax.legend(labels)
 
 
 def plot_decision_boundary_2D(X, w, ax=None, colors=None):
@@ -81,3 +93,17 @@ def plot_decision_boundary_2D(X, w, ax=None, colors=None):
     # Fill the region below the decision boundary (shade in another color)
     ax.fill_between(x1, min(x2.min(), X[:, 1].min()), x2, color=colors[1], alpha=0.2)
     # plt.fill_between(x1, min(x2.min(), X[:, 1].min()), x2, color=colors[1], alpha=0.2)
+
+
+def plot_xor(ax=None, colors=None):
+    if ax is None:
+        ax = plt.gca()
+
+    if colors is None:
+        colors = ["orange", "blue"]
+
+    ax.scatter([0, 1], [0, 1], color=colors[0], edgecolors="gray")
+    ax.scatter([0, 1], [1, 0], color=colors[1], edgecolors="gray")
+    ax.set_xlabel("$x_1$")
+    ax.set_ylabel("$x_2$")
+    ax.legend(["0", "1"])
