@@ -21,5 +21,13 @@ Thumbs.db
 # Ignore .joblib files
 *.joblib
 
-# Ignore .pt files
-*.pt
+# Ignore .pth (checkpoint) files
+*.pth
+
+# Ignore directories
+dataset/
+model/
+report/
+
+# Ignore .json files
+*.json
